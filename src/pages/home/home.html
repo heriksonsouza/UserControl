@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Área de acesso
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list>
+      <ion-item>
+      <ion-label color="primary" floating >Usuario</ion-label>
+      <ion-input [(ngModel)]="usuario.nome"></ion-input>
+    </ion-item>
+      <ion-item>
+      <ion-label color="primary" floating >Senha</ion-label>
+      <ion-input [(ngModel)]="usuario.senha"></ion-input>
+    </ion-item>
+    <ion-grid>
+        <ion-row>
+          <ion-col width-50>
+            <button ion-button full round (click)="efetuarLogin()" >ENTRAR</button>
+                    </ion-col>
+            <ion-col width-50>
+                <button ion-button full round (click)="acessarCadastro()" >CADASTRAR</button>
+              </ion-col>
+        </ion-row>
+      </ion-grid>
+        <button ion-button full (click)="acessarPrincipal()" >PRINCIPAL</button>
+    </ion-list>
+</ion-content>
