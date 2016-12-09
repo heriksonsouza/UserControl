@@ -4,3 +4,14 @@
   "v2": true,
   "typescript": true
 }
+
+{
+  "name": "proxy-example",
+  "app_id": "",
+  "proxies": [
+    {
+      "path": "/api",
+      "proxyUrl": "http://cors.api.com/api"
+    }
+  ]
+}
