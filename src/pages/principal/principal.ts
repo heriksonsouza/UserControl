@@ -28,28 +28,28 @@ export class PrincipalPage {
   }
 
   listar(){
-    this.http.get('http://localhost:8100/userctrl/listar').map(res => res.json()).subscribe(data => {
+    this.http.get('http://localhost:8183/IonicApp/resource/usuario/listar').map(res => res.json()).subscribe(data => {
       this.usuario = data;
     });
   }
 
   buscarNome(){
     console.log(this.pesquisa);
-    this.http.get('http://localhost:8100/userctrl/buscarNome/'+this.pesquisa).map(res => res.json()).subscribe(data => {
+    this.http.get('http://localhost:8183/IonicApp/resource/usuario/buscarNome/'+this.pesquisa).map(res => res.json()).subscribe(data => {
       this.usuario = data;
     });
   }
 
    buscarCPF(){
     console.log(this.pesquisa);
-    this.http.get('http://localhost:8100/userctrl/buscarCPF/'+this.pesquisa).map(res => res.json()).subscribe(data => {
+    this.http.get('http://localhost:8183/IonicApp/resource/usuario/buscarCPF/'+this.pesquisa).map(res => res.json()).subscribe(data => {
       this.usuario = data;
     });
   }
 
    buscarEmail(){
     console.log(this.pesquisa);
-    this.http.get('http://localhost:8100/userctrl/buscarEmail/'+this.pesquisa).map(res => res.json()).subscribe(data => {
+    this.http.get('http://localhost:8183/IonicApp/resource/usuario/buscarEmail/'+this.pesquisa).map(res => res.json()).subscribe(data => {
     this.usuario = data;
     });
   }

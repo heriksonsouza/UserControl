@@ -1,7 +1,7 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Área de acesso
+      Controle de Usuário
     </ion-title>
   </ion-navbar>
 </ion-header>
@@ -9,9 +9,12 @@
 <ion-content padding>
 
   <ion-list>
+    <ion-item>
+      <ion-label fixed>LOGIN</ion-label>
+      </ion-item>
       <ion-item>
-      <ion-label color="primary" floating >Usuario</ion-label>
-      <ion-input [(ngModel)]="usuario.nome"></ion-input>
+      <ion-label color="primary" floating >Email</ion-label>
+      <ion-input [(ngModel)]="usuario.email"></ion-input>
     </ion-item>
       <ion-item>
       <ion-label color="primary" floating >Senha</ion-label>

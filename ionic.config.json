@@ -4,14 +4,3 @@
   "v2": true,
   "typescript": true
 }
-
-{
-  "name": "proxy-example",
-  "app_id": "",
-  "proxies": [
-    {
-      "path": "/userctrl",
-      "proxyUrl": "http://localhost:8183/IonicApp/resource/usuario"
-    }
-  ]
-}
