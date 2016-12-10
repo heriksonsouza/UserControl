@@ -25,7 +25,7 @@ public usuario;
   }
 
   efetuarLogin(){
-    this.http.post('http://localhost:8183/IonicApp/resource/usuario/login', this.usuario).map(res => res.json()).subscribe(data => {
+    this.http.post('http://localhost:8100/userctrl/login', this.usuario).map(res => res.json()).subscribe(data => {
         if (data != false) {
           console.log('Login');
         this.acessarPrincipal();
